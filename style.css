@@ -3,7 +3,9 @@
 }
 
 .fotosaya {
-    width: 200px;
-    height: 100px;
+    width: 2560px;
+    height: 1440px;
     background-image: url('images/portoo.JPG');
+    background-position: no-repeat;
+    background-size: 2560px 1440px ; 
 }
