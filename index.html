@@ -1,27 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
+    <title>Porto</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+  crossorigin="anonymous"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+  rel="stylesheet"
+/>
+  </head>
+  <body>
+    <!-- <img id="logo" src="./images/logo hakeme.png"> -->
+    <!-- START NAV -->
 
-<body>
-    <main>
-        <h1></h1>
-
-        <h2 class="font-red">I am Hakeem</h2>
-
-
-        <p>Testing local repo</p>
-
-        <p class="font-red">Ais Kentut</p>
-        <img src="images/portoo.JPG" alt="Foto Saya" class="fotosatu">
-        <!-- <div class="fotosaya"></div> -->
-    </main>
-</body>
-
+<nav id="navbar" class="nav">
+    <img id="logo" src="./images/logo.png">
+    <ul class="nav-list">
+      <li>
+        <a href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a href="#projects">Work</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!-- END NAV -->
+  
+  <!-- START WELCOME SECTION -->
+  
+  <section id="welcome-section" class="welcome-section">
+    <h1>Hey I am Rayhan Hakeem</h1>
+    <p>an undergraduate informatics engineer</p>
+  </section>
+  
+  <!-- END WELCOME SECTION -->
+  
+  <!-- START PROJECTS SECTION -->
+  
+  <section id="projects" class="projects-section">
+    <h2 class="projects-section-header">These are some of my projects</h2>
+  
+    <div class="projects-grid">
+      <a
+        href="https://codepen.io/freeCodeCamp/full/zNqgVx"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Tribute Page
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Random Quote Machine
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          JavaScript Calculator
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/freeCodeCamp/full/mVEJag"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Map Data Across the Globe
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/freeCodeCamp/full/wGqEga"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Wikipedia Viewer
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+      <a
+        href="https://codepen.io/freeCodeCamp/full/KzXQgy"
+        target="_blank"
+        class="project project-tile"
+      >
+        <img
+          class="project-image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
+          alt="project"
+        />
+        <p class="project-title">
+          <span class="code">&lt;</span>
+          Tic Tac Toe Game
+          <span class="code">&#47;&gt;</span>
+        </p>
+      </a>
+    </div>
+  
+    <a
+      href="https://codepen.io/FreeCodeCamp/"
+      class="btn btn-show-all"
+      target="_blank"
+      >Show all<i class="fas fa-chevron-right"></i
+    ></a>
+  </section>
+  
+  <!-- END PROJECTS SECTION -->
+  
+  <!-- START CONTACT SECTION -->
+  
+  <section id="contact" class="contact-section">
+    <div class="contact-section-header">
+      <h2>Let's work together...</h2>
+      <p>How do you take your coffee?</p>
+    </div>
+    <div class="contact-links">
+      <a
+        id="profile-link"
+        href="https://github.com/rayhanhakeem"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-github"></i> GitHub</a
+      >   
+      <a
+        href="https://www.instagram.com/ha.keem"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-instagram"></i></i> Instagram</a
+      >
+      <a
+        href="https://twitter.com/rayhanhakeemm"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-twitter"></i> Twitter</a
+      >
+      <a
+        href="https://www.linkedin.com/in/rayhanhakeem/"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+      >
+      <a href="mailto:hakimnubi404@gmail.com" class="btn contact-details"
+        ><i class="fas fa-envelope"></i> Send a mail</a
+      >
+    </div>
+  </section>
+  
+  <!-- END CONTACT SECTION -->
+  
+  <!-- START FOOTER SECTION -->
+  
+  <footer>
+    
+    <p>
+       Thanks to
+      <a href="https://www.freecodecamp.com/" target="_blank"
+        >freeCodeCamp <i class="fab fa-free-code-camp"></i
+      > for the reference</a>
+    </p>
+  </footer>
+  
+  <!-- END FOOTER SECTION -->
+  </body>
 </html>
