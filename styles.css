@@ -136,7 +136,7 @@
     height: 70px;
     margin-right: 4rem;
   }
-  @media (max-width: 28.75em) {
+  @media (max-width: 460px) {
     .nav {
       justify-content: space-between;
       align-items:center;
@@ -185,7 +185,7 @@
     color: var(--main-red);
   }
 
-  @media (max-width: 28.75em) {
+  @media (max-width: 460px) {
     .welcome-section p {
       text-align: center;
     }
@@ -205,7 +205,7 @@
     border-bottom: 0.2rem solid var(--main-white);
   }
   
-  @media (max-width: 28.75em) {
+  @media (max-width: 460px) {
     .projects-section-header {
       font-size: 4rem;
       padding-top: 4rem;
@@ -215,7 +215,7 @@
   /* "Automagic" image grid using no media queries */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
@@ -223,7 +223,7 @@
     margin-bottom: 6rem;
   }
   
-  @media (max-width: 30.625em) {
+  /* @media (max-width: 490px) {
     .projects-section {
       padding: 6rem 1rem;
     }
@@ -231,7 +231,7 @@
     .projects-grid {
       grid-template-columns: 1fr;
     }
-  }
+  } */
   
   .project {
     background: var(--main-gray);
@@ -239,45 +239,15 @@
     border-radius: 2px;
   }
   
-  .code {
-    color: var(--main-gray);  
-    transition: color 0.3s ease-out;
-  }
-  
-  .project:hover .code {
-    color: #ff7f50;
-  }
-  
   /* PROJECT 1 IMAGE */
-  .project-image11 {
-    
-    display:none;
-  }
-  .project-image12, .project-image13, .project-image14{
+
+  .project-image11,.project-image12, .project-image13, .project-image14{
     display: none;
   }
   #p11,#p12,#p13,#p14 {
     display: none;
   }
-  #p11:checked ~ .project-image11{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p12:checked ~ .project-image12{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p13:checked ~ .project-image13{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p14:checked ~ .project-image14{
+  #p11:checked ~ .project-image11, #p12:checked ~ .project-image12, #p13:checked ~ .project-image13, #p14:checked ~ .project-image14{
     width: 100%;
     object-fit: fill;
     max-height: 300px;
@@ -285,12 +255,8 @@
   }
 
   /* PROJECT 2 IMAGE */
-  .project-image21{
-    
-    display:none;
-  }
   
-  .project-image22, .project-image23, .project-image24,.project-image25{
+  .project-image21,.project-image22, .project-image23, .project-image24,.project-image25{
     display: none;
   }
   
@@ -298,31 +264,7 @@
     display: none;
   }
 
-  #p21:checked ~ .project-image21{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p22:checked ~ .project-image22{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p23:checked ~ .project-image23{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p24:checked ~ .project-image24{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p25:checked ~ .project-image25{
+  #p21:checked ~ .project-image21, #p22:checked ~ .project-image22, #p23:checked ~ .project-image23, #p24:checked ~ .project-image24, #p25:checked ~ .project-image25{
     width: 100%;
     object-fit: fill;
     max-height: 300px;
@@ -330,12 +272,8 @@
   }
 
   /* PROJECT 3 IMAGE */
-  .project-image31{
-    
-    display:none;
-  }
   
-  .project-image32, .project-image33, .project-image34{
+  .project-image31,.project-image32, .project-image33, .project-image34{
     display: none;
   }
   
@@ -343,25 +281,7 @@
     display: none;
   }
 
-  #p31:checked ~ .project-image31{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p32:checked ~ .project-image32{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p33:checked ~ .project-image33{
-    width: 100%;
-    object-fit: fill;
-    max-height: 300px;
-    display:block;
-  }
-  #p34:checked ~ .project-image34{
+  #p31:checked ~ .project-image31, #p32:checked ~ .project-image32, #p33:checked ~ .project-image33, #p34:checked ~ .project-image34{
     width: 100%;
     object-fit: fill;
     max-height: 300px;
@@ -401,8 +321,8 @@
   .img-preview {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0 200px;
+    justify-content: center;
+    
   }
 
   .aset-preview {
@@ -458,7 +378,7 @@
     font-size: 6rem;
   }
   
-  @media (max-width: 28.75em) {
+  @media (max-width: 460px) {
     .contact-section-header > h2 {
       font-size: 4rem;
     }
@@ -506,7 +426,7 @@
     vertical-align: middle;
   }
   
-  @media (max-width: 28.75em) {
+  @media (max-width: 460px) {
     footer {
       flex-direction: column;
       text-align: center;
