@@ -138,17 +138,16 @@
   }
   @media (max-width: 460px) {
     .nav {
-      justify-content: space-between;
       align-items:center;
-      width: 658.67px;
     }
   
     .nav-list {
-      justify-content:space-evenly;
       align-items: center;
       margin: 0;
-      margin-right: 21.5rem;
-      height: 0;
+    }
+
+    .nav-list a {
+      margin-right: 0;
     }
     
   }
@@ -167,6 +166,8 @@
   
   /* Welcome section */
   
+  
+
   .welcome-section {
     display: flex;
     flex-direction: column;
@@ -191,6 +192,10 @@
     }
   }
   
+  .welcome-section .bio {
+    color: white;
+    float: left;  
+  }
   /* Projects section */
 
   .projects-section {
@@ -220,7 +225,7 @@
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
   }
   
   /* @media (max-width: 490px) {
@@ -241,39 +246,55 @@
   
   /* PROJECT 1 IMAGE */
 
-  .project-image11,.project-image12, .project-image13, .project-image14{
+  .current-image .project-image11,.current-image .project-image12, .current-image .project-image13, .current-image .project-image14{
     display: none;
   }
   #p11,#p12,#p13,#p14 {
     display: none;
   }
-  #p11:checked ~ .project-image11, #p12:checked ~ .project-image12, #p13:checked ~ .project-image13, #p14:checked ~ .project-image14{
+  #p11:checked ~ .current-image .project-image11, #p12:checked ~ .current-image .project-image12, #p13:checked ~ .current-image .project-image13, #p14:checked ~ .current-image .project-image14{
     width: 100%;
     object-fit: fill;
     max-height: 300px;
     display:block;
   }
 
+  #zoom {
+    display: none;
+  }
+
+  #zoom:checked ~ .current-image > .project-image11, #zoom:checked ~ .current-image > .project-image12, #zoom:checked ~ .current-image > .project-image13, #zoom:checked ~ .current-image > .project-image14{
+    transform: scale(3);
+    margin-left: 440px;
+  }
   /* PROJECT 2 IMAGE */
   
-  .project-image21,.project-image22, .project-image23, .project-image24,.project-image25{
+  .current-image .project-image21,.current-image .project-image22, .current-image .project-image23, .current-image .project-image24, .current-image .project-image25{
     display: none;
   }
   
   #p21,#p22,#p23,#p24,#p25 {
     display: none;
   }
-
-  #p21:checked ~ .project-image21, #p22:checked ~ .project-image22, #p23:checked ~ .project-image23, #p24:checked ~ .project-image24, #p25:checked ~ .project-image25{
+  
+  #p21:checked ~ .current-image .project-image21, #p22:checked ~ .current-image .project-image22, #p23:checked ~ .current-image .project-image23, #p24:checked ~ .current-image .project-image24, #p25:checked ~ .current-image .project-image25{
     width: 100%;
     object-fit: fill;
     max-height: 300px;
     display:block;
   }
 
+  #zoom2 {
+    display: none;
+  }
+
+  #zoom2:checked ~ .current-image > .project-image21, #zoom2:checked ~ .current-image > .project-image22, #zoom2:checked ~ .current-image > .project-image23, #zoom2:checked ~ .current-image > .project-image24, #zoom2:checked ~ .current-image > .project-image25{
+    transform: scale(3);
+  }
+
   /* PROJECT 3 IMAGE */
   
-  .project-image31,.project-image32, .project-image33, .project-image34{
+  .current-image .project-image31,.current-image .project-image32, .current-image .project-image33, .current-image .project-image34{
     display: none;
   }
   
@@ -281,14 +302,36 @@
     display: none;
   }
 
-  #p31:checked ~ .project-image31, #p32:checked ~ .project-image32, #p33:checked ~ .project-image33, #p34:checked ~ .project-image34{
+  #p31:checked ~ .current-image .project-image31, #p32:checked ~ .current-image .project-image32, #p33:checked ~ .current-image .project-image33, #p34:checked ~ .current-image .project-image34{
     width: 100%;
     object-fit: fill;
     max-height: 300px;
     display:block;
   }
-  
-  
+  #zoom3 {
+    display: none;
+  }
+  #zoom3:checked ~ .current-image > .project-image31, #zoom3:checked ~ .current-image > .project-image32, #zoom3:checked ~ .current-image > .project-image33, #zoom3:checked ~ .current-image > .project-image34{
+    transform: scale(3);
+    margin-left: -440px;
+  }
+
+  @media (max-width:460px) {
+    #zoom:checked ~ .current-image > .project-image11, #zoom:checked ~ .current-image > .project-image12, #zoom:checked ~ .current-image > .project-image13, #zoom:checked ~ .current-image > .project-image14{
+      transform: scale(110%);
+      margin-left: 0;
+    }
+    #zoom2:checked ~ .current-image > .project-image21, #zoom2:checked ~ .current-image > .project-image22, #zoom2:checked ~ .current-image > .project-image23, #zoom2:checked ~ .current-image > .project-image24, #zoom2:checked ~ .current-image > .project-image25{
+      transform: scale(1.65);
+      
+    }
+    #zoom3:checked ~ .current-image > .project-image31, #zoom3:checked ~ .current-image > .project-image32, #zoom3:checked ~ .current-image > .project-image33, #zoom3:checked ~ .current-image > .project-image34{
+      transform: scale(1.1);
+      margin-left: 0;
+    }
+  }
+
+  /* PROJECT IMAGE SELESAI */
   .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
@@ -318,6 +361,11 @@
     background: var(--main-gray); 
   }
 
+  .project img {
+    transition: transform 0.25s ease-out;
+    cursor: pointer;
+  }
+
   .img-preview {
     display: flex;
     flex-direction: row;
@@ -332,6 +380,8 @@
     background-color: #3a3d40;
     border-radius: 12px solid #c3d2e1;
     cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
   }
   
   .btn {

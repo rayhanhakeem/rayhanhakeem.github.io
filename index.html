@@ -20,19 +20,20 @@
   href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
   rel="stylesheet"
 />
+<link href="./coreui-icons-master/css/all.css" rel="stylesheet">
   </head>
   <body>
     <!-- <img id="logo" src="./images/logo hakeme.png"> -->
     <!-- START NAV -->
 
 <nav id="navbar" class="nav">
-    <img id="logo" src="./images/logo.png">
+    <a href="https://rayhanhakeem.github.io/"><img id="logo" src="./images/logo.png"></a>
     <ul class="nav-list">
       <li>
         <a href="#welcome-section">About</a>
       </li>
       <li>
-        <a href="#projects">Work</a>
+        <a href="#projects">Projects</a>
       </li>
       <li>
         <a href="#contact">Contact</a>
@@ -48,8 +49,12 @@
   <!-- START WELCOME SECTION -->
   
   <section id="welcome-section" class="welcome-section">
-    <h1>Hey I am Rayhan Hakeem</h1>
-    <p>an undergraduate informatics engineer</p>
+    <p class="hello">Hello, my name is</p>
+    <h1>Rayhan Hakeem</h1>
+    <p>A student of informatics engineering at Brawijaya University</p></br>
+    
+    <p class="bio">like to interact, like to hanging out, and</p>
+    <p class="bio">like to solve problems</p>
   </section>
   
   <!-- END WELCOME SECTION -->
@@ -81,6 +86,10 @@
         <input type="radio" name="imgk"id="p12">
         <input type="radio" name="imgk"id="p13">
         <input type="radio" name="imgk"id="p14">
+
+        <input type="checkbox" id="zoom">
+        <label for="zoom" class="current-image">
+        
         <img
           class="project-image11"
           src="./images/imk-1.jpg"
@@ -91,18 +100,17 @@
           src="./images/imk-2.jpg" 
           alt="project" 
         />
-        
         <img
           class="project-image13"
           src="./images/imk-3.jpg" 
           alt="project" 
         />
-        
         <img
           class="project-image14"
           src="./images/imk-4.jpg" 
           alt="project" 
         />
+      </label>
         <div class="img-preview">
           <label  for="p11">
           <img class="aset-preview" src="./images/imk-1.jpg"></label>
@@ -142,7 +150,9 @@
         <input type="radio" name="kuyliahg" id="p23">
         <input type="radio" name="kuyliahg" id="p24">
         <input type="radio" name="kuyliahg" id="p25">
-      
+        
+        <input type="checkbox" id="zoom2">
+        <label for="zoom2" class="current-image">
         <img
           class="project-image21"
           src="./images/kuyliah.jpg" 
@@ -171,7 +181,7 @@
           src="./images/kuyliah5.jpg" 
           alt="project" 
         />
-      
+          </label>
         <div class="img-preview">
           <label for="p21">
           <img class="aset-preview" src="./images/kuyliah.jpg"></label>
@@ -218,7 +228,9 @@ menentukan jurusan di dunia perkuliahan.</br>
         <input type="radio" name="stormieg" id="p32">
         <input type="radio" name="stormieg" id="p33">
         <input type="radio" name="stormieg" id="p34">
-      
+
+        <input type="checkbox" id="zoom3">
+        <label for="zoom3" class="current-image">
         <img
           class="project-image31"
           src="./images/stormie1.png" 
@@ -241,7 +253,7 @@ menentukan jurusan di dunia perkuliahan.</br>
           src="./images/stormie4.jpg" 
           alt="project" 
         />
-      
+        </label>
         <div class="img-preview">
           <label for="p31">
           <img class="aset-preview" src="./images/stormie1.png"></label>
@@ -269,95 +281,7 @@ menentukan jurusan di dunia perkuliahan.</br>
         </p>
 
       </div>
-      <!-- <a
-        href="https://codepen.io/freeCodeCamp/full/qRZeGZ"
-        target="_blank"
-        class="project project-tile"
-      >
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          Random Quote Machine
-          <span class="code">&#47;&gt;</span>
-        </p>
-        <img
-          class="project-image"
-          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
-          alt="project"
-        />
-        <p class="project-desc">
-          <span class="code">&lt;</span>
-          Random Quote Machine
-          <span class="code">&#47;&gt;</span>
-        </p>
-      </a> -->
-      
-      
-      <!-- <a
-        href="https://codepen.io/freeCodeCamp/full/wgGVVX"
-        target="_blank"
-        class="project project-tile"
-      >
-        <img
-          class="project-image"
-          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
-          alt="project"
-        />
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          JavaScript Calculator
-          <span class="code">&#47;&gt;</span>
-        </p>
-      </a>
-      <a
-        href="https://codepen.io/freeCodeCamp/full/mVEJag"
-        target="_blank"
-        class="project project-tile"
-      >
-        <img
-          class="project-image"
-          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
-          alt="project"
-        />
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          Map Data Across the Globe
-          <span class="code">&#47;&gt;</span>
-        </p>
-      </a>
-      <a
-        href="https://codepen.io/freeCodeCamp/full/wGqEga"
-        target="_blank"
-        class="project project-tile"
-      >
-        <img
-          class="project-image"
-          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png"
-          alt="project"
-        />
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          Wikipedia Viewer
-          <span class="code">&#47;&gt;</span>
-        </p>
-      </a>
-      <a
-        href="https://codepen.io/freeCodeCamp/full/KzXQgy"
-        target="_blank"
-        class="project project-tile"
-      >
-        <img
-          class="project-image"
-          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png"
-          alt="project"
-        />
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          Tic Tac Toe Game
-          <span class="code">&#47;&gt;</span>
-        </p>
-      </a> -->
     </div>
-  
     <!-- <a
       href="https://codepen.io/FreeCodeCamp/"
       class="btn btn-show-all"
@@ -390,10 +314,16 @@ menentukan jurusan di dunia perkuliahan.</br>
         ><i class="fab fa-instagram"></i></i> Instagram</a
       >
       <a
-        href="https://twitter.com/rayhanhakeemm"
+        href="https://www.hackerrank.com/Hakeem_081"
         target="_blank"
         class="btn contact-details"
-        ><i class="fab fa-twitter"></i> Twitter</a
+        ><i class="fab fa-hackerrank"></i> HackerRank</a
+      >
+      <a
+        href="https://leetcode.com/rayhanhakeem/"
+        target="_blank"
+        class="btn contact-details"
+        ><i class="cib-leetcode"></i> LeetCode</a
       >
       <a
         href="https://www.linkedin.com/in/rayhanhakeem/"
