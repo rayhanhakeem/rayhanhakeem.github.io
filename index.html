@@ -1,378 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayhan Hakeem Portfolio Page</title>
-    <link rel="icon" href="./images/logo.png">
-    <link rel="stylesheet" href="./styles.css">
-    <link
-  rel="stylesheet"
-  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-  crossorigin="anonymous"
-/>
-<link
-  href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-  rel="stylesheet"
-/>
-<link
-  href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-  rel="stylesheet"
-/>
-<link href="./coreui-icons-master/css/all.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- <img id="logo" src="./images/logo hakeme.png"> -->
-    <!-- START NAV -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rayhan Hakeem — Backend Developer (.NET)</title>
+<meta name="description" content="Backend developer building banking APIs, core-banking middleware, and reconciliation tooling with ASP.NET Core, C#, and SQL Server.">
+<meta property="og:title" content="Rayhan Hakeem — Backend Developer (.NET)">
+<meta property="og:description" content="Banking backend services: .NET APIs, core-banking middleware, and reconciliation tooling.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rayhanhakeem.github.io/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f6b6b'/%3E%3Ctext x='32' y='44' font-family='Segoe UI,Arial' font-size='34' font-weight='700' fill='white' text-anchor='middle'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rayhan Hakeem",
+  "jobTitle": "Backend Developer",
+  "url": "https://rayhanhakeem.github.io/",
+  "email": "mailto:hakimnubi404@gmail.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Tangerang", "addressCountry": "ID" },
+  "alumniOf": "Universitas Brawijaya",
+  "knowsAbout": ["C#", "ASP.NET Core", "SQL Server", "REST APIs", "Banking middleware"],
+  "sameAs": [
+    "https://github.com/rayhanhakeem",
+    "https://www.linkedin.com/in/rayhanhakeem"
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
 
-<nav id="navbar" class="nav">
-    <a href="https://rayhanhakeem.github.io/"><img id="logo" src="./images/logo.png"></a>
-    <ul class="nav-list">
-      <li>
-        <a href="#welcome-section">About</a>
-      </li>
-      <li>
-        <a href="#projects">Projects</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-      <!-- <li>
-        <a href="">CV</a>
-      </li> -->
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top">Rayhan Hakeem</a>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-cv" href="cv.pdf">CV</a></li>
     </ul>
   </nav>
-  
-  <!-- END NAV -->
-  
-  <!-- START WELCOME SECTION -->
-  
-  <section id="welcome-section" class="welcome-section">
-    <p class="hello">Hello, my name is</p>
-    <h1>Rayhan Hakeem</h1>
-    <!-- <p>I am a fresh graduate with a degree in computer science from Brawijaya University</p></br> -->
-    <p>Software Engineer & Web Developer specialized in building web applications </p>
-    <p>using <strong>.NET Framework, C#, and SQL Server</strong>.</p></br>
-    
-    <p class="bio">Passionate about solving real-world problems through clean code,</p>
-    <p class="bio">scalable architecture, and continuous learning.</p>
-  </section>
+</header>
 
-   <!-- WELCOME SECTION
-    <section id="welcome-section" class="welcome-section">
-      <p class="hello">Hi, I’m</p>
-      <h1>Rayhan Hakeem</h1>
-      <p>
-        Software Engineer & Web Developer specialized in building web
-        applications using <strong>.NET Framework, C#, and SQL Server</strong>.
+<main id="main">
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <p class="eyebrow">Backend Developer · Tangerang, Indonesia</p>
+      <h1>I build banking services that stay correct under production load.</h1>
+      <p class="lede">
+        .NET engineer with 2+ years in banking and enterprise systems. I work on the layer between
+        mobile channels and core banking: REST APIs, integration middleware, reconciliation, and the
+        error handling that decides whether an incident lasts minutes or hours.
       </p>
-      <br />
-      <p class="bio">
-        Passionate about solving real-world problems through clean code,
-        scalable architecture, and continuous learning.
-      </p>
-    </section> -->
-  
-  <!-- END WELCOME SECTION -->
-
-  
-  
-  <!-- START PROJECTS SECTION -->
-  
-  <section id="projects" class="projects-section">
-    <h2 class="projects-section-header">These are some of my projects</h2>
-  
-    <!-- <div>
-      <input type="radio" name="bg-changer" id="blackBg">
-      <label for="blackBg">Black</label>
-      <br>
-      <input type="radio" name="bg-changer" id="whiteBg">
-      <label for="whiteBg">White</label>
-      <br>
-    </div> -->
-
-    <div class="projects-grid">
-      <div
-        
-        class="project project-tile"
-      >
-        <p class="project-title">
-          E-Aspirasi DRPD Kota Malang
-        </p>
-        
-        <input type="radio" name="imgk"id="p11" checked="checked">
-        <input type="radio" name="imgk"id="p12">
-        <input type="radio" name="imgk"id="p13">
-        <input type="radio" name="imgk"id="p14">
-
-        <input type="checkbox" id="zoom">
-        <label for="zoom" class="current-image">
-        
-        <img
-          class="project-image11"
-          src="./images/imk-1.jpg"
-          alt="project" 
-        />
-        <img
-          class="project-image12"
-          src="./images/imk-2.jpg" 
-          alt="project" 
-        />
-        <img
-          class="project-image13"
-          src="./images/imk-3.jpg" 
-          alt="project" 
-        />
-        <img
-          class="project-image14"
-          src="./images/imk-4.jpg" 
-          alt="project" 
-        />
-      </label>
-        <div class="img-preview">
-          <label  for="p11">
-          <img class="aset-preview" src="./images/imk-1.jpg"></label>
-          <label  for="p12">
-          <img class="aset-preview" src="./images/imk-2.jpg"></label>
-          <label  for="p13">
-          <img class="aset-preview" src="./images/imk-3.jpg"></label>
-          <label  for="p14">
-          <img class="aset-preview" src="./images/imk-4.jpg"></label>
-        </div>
-        <p class="project-desc">
-          <span class="zz">Description</span></br>
-          Sebuah aplikasi yang dapat mempermudah penyaluran aspirasi masyarakat ke lembaga pemerintah khususnya untuk Kota Malang</br>
-          <span class="zz">Role</span></br>
-          Web Developer</br>
-          <span class="zz">Tool</span></br>
-          HTML | CSS </br>
-          <span class="zz">Type</span> </br>
-          College Project </br>
-          <span class="zz">Status</span> </br>
-          Private </br>
-          <span class="zz">Period</span> </br>
-          December 2021
-        </p>
-
+      <div class="cta">
+        <a class="button primary" href="#projects">View projects</a>
+        <a class="button" href="cv.pdf" download>Download CV</a>
       </div>
-
-      <div 
-        class="project project-tile"
-      >
-        <p class="project-title">
-          KUYLIAH
-        </p>
-        
-        <input type="radio" name="kuyliahg" id="p21" checked="checked">
-        <input type="radio" name="kuyliahg" id="p22">
-        <input type="radio" name="kuyliahg" id="p23">
-        <input type="radio" name="kuyliahg" id="p24">
-        <input type="radio" name="kuyliahg" id="p25">
-        
-        <input type="checkbox" id="zoom2">
-        <label for="zoom2" class="current-image">
-        <img
-          class="project-image21"
-          src="./images/kuyliah.jpg" 
-          alt="project" 
-        />
-        <img
-          class="project-image22"
-          src="./images/kuyliah2.jpg" 
-          alt="project" 
-        />
-        
-        <img
-          class="project-image23"
-          src="./images/kuyliah3.jpg" 
-          alt="project" 
-        />
-        
-        <img
-          class="project-image24"
-          src="./images/kuyliah4.jpg" 
-          alt="project" 
-        />
-
-        <img
-          class="project-image25"
-          src="./images/kuyliah5.jpg" 
-          alt="project" 
-        />
-          </label>
-        <div class="img-preview">
-          <label for="p21">
-          <img class="aset-preview" src="./images/kuyliah.jpg"></label>
-          <label for="p22">
-          <img class="aset-preview" src="./images/kuyliah2.jpg"></label>
-          <label for="p23">
-          <img class="aset-preview" src="./images/kuyliah3.jpg"></label>
-          <label for="p24">
-          <img class="aset-preview" src="./images/kuyliah4.jpg"></label>
-          <label for="p25">
-          <img class="aset-preview" src="./images/kuyliah5.jpg"></label>
-
-        </div>
-        <p class="project-desc">
-          <span class="xx">Description</span></br>
-          Sebuah aplikasi penyedia informasi
-terkait dunia perkuliahan yang berguna untuk para
-siswa yang bingung untuk mencari informasi
-perkuliahan secara tersentral dan dilengkapi dengan
-tes psikotes untuk menguji kecocokan mereka dalam
-menentukan jurusan di dunia perkuliahan.</br>
-          <span class="xx">Role</span></br>
-          UI/UX Design</br>
-          <span class="xx">Tool</span></br>
-          Figma </br>
-          <span class="xx">Type</span> </br>
-          College Project </br>
-          <span class="xx">Status</span> </br>
-          Private </br>
-          <span class="xx">Period</span> </br>
-          November 2022
-        </p>
-
-      </div>
-
-      <div 
-        class="project project-tile"
-      >
-        <p class="project-title">
-          STORMIE
-        </p>
-        
-        <input type="radio" name="stormieg" id="p31" checked="checked">
-        <input type="radio" name="stormieg" id="p32">
-        <input type="radio" name="stormieg" id="p33">
-        <input type="radio" name="stormieg" id="p34">
-
-        <input type="checkbox" id="zoom3">
-        <label for="zoom3" class="current-image">
-        <img
-          class="project-image31"
-          src="./images/stormie1.png" 
-          alt="project" 
-        />
-        <img
-          class="project-image32"
-          src="./images/stormie2.jpg" 
-          alt="project" 
-        />
-        
-        <img
-          class="project-image33"
-          src="./images/stormie3.png" 
-          alt="project" 
-        />
-        
-        <img
-          class="project-image34"
-          src="./images/stormie4.jpg" 
-          alt="project" 
-        />
-        </label>
-        <div class="img-preview">
-          <label for="p31">
-          <img class="aset-preview" src="./images/stormie1.png"></label>
-          <label for="p32">
-          <img class="aset-preview" src="./images/stormie2.jpg"></label>
-          <label for="p33">
-          <img class="aset-preview" src="./images/stormie3.png"></label>
-          <label for="p34">
-          <img class="aset-preview" src="./images/stormie4.jpg"></label>
-
-        </div>
-        <p class="project-desc">
-          <span class="yy">Description</span></br>
-          Sebuah aplikasi platform marketplace tempat menyewakan mobil listrik maupun sebagai aplikasi sewa mobil listrik yang nyaman dan cepat.</br>
-          <span class="yy">Role</span></br>
-          Android Developer</br>
-          <span class="yy">Tool</span></br>
-          Android Studio | Kotlin | Figma </br>
-          <span class="yy">Type</span> </br>
-          College Project </br>
-          <span class="yy">Status</span> </br>
-          Private </br>
-          <span class="yy">Period</span> </br>
-          November 2022
-        </p>
-
-      </div>
+      <ul class="quick-links" aria-label="Profiles">
+        <li><a href="https://github.com/rayhanhakeem">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/rayhanhakeem">LinkedIn</a></li>
+        <li><a href="mailto:hakimnubi404@gmail.com">Email</a></li>
+      </ul>
     </div>
-    <!-- <a
-      href="https://codepen.io/FreeCodeCamp/"
-      class="btn btn-show-all"
-      target="_blank"
-      >Show all<i class="fas fa-chevron-right"></i
-    ></a> -->
-  </section>
-  
-  <!-- END PROJECTS SECTION -->
-  
-  <!-- START CONTACT SECTION -->
-  
-  <section id="contact" class="contact-section">
-    <div class="contact-section-header">
-      <h2>Get In Touch</h2>
-      <hr>
-      <!-- <p>How do you take your coffee?</p> -->
-      <!-- <p>Get In Touch</p> -->
-    </div>
-    <div class="contact-links">
-      <a
-        id="profile-link"
-        href="https://github.com/rayhanhakeem"
-        target="_blank"
-        class="btn contact-details"
-        ><i class="fab fa-github"></i> GitHub</a
-      >   
-      <a
-        href="https://www.instagram.com/ha.keem_"
-        target="_blank"
-        class="btn contact-details"
-        ><i class="fab fa-instagram"></i></i> Instagram</a
-      >
-      <a
-        href="https://gitlab.com/rayhanhakeem"
-        target="_blank"
-        class="btn contact-details"
-        ><i class="fab fa-gitlab"></i> GitLab</a
-      >
-      <a
-        href="https://leetcode.com/rayhanhakeem/"
-        target="_blank"
-        class="btn contact-details"
-        ><i class="cib-leetcode"></i> LeetCode</a
-      >
-      <a
-        href="https://www.linkedin.com/in/rayhanhakeem/"
-        target="_blank"
-        class="btn contact-details"
-        ><i class="fab fa-linkedin-in"></i> LinkedIn</a
-      >
-      <a href="mailto:hakimnubi404@gmail.com" class="btn contact-details"
-        ><i class="fas fa-envelope"></i> Send a mail</a
-      >
+
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal-bar"><span></span><span></span><span></span></div>
+      <pre><code><span class="c">$</span> curl -X POST /api/v1/transfers \
+  -H <span class="s">"Idempotency-Key: demo-key-001"</span> \
+  -d <span class="s">'{"amount":150000,"currency":"IDR"}'</span>
+
+<span class="ok">202 Accepted</span>
+{ <span class="k">"reference"</span>: <span class="s">"TRF-20261118..."</span>,
+  <span class="k">"status"</span>: <span class="s">"ACCEPTED"</span> }
+
+<span class="c"># replay, same key</span>
+<span class="ok">202 Accepted</span>  <span class="m">Idempotent-Replay: true</span></code></pre>
     </div>
   </section>
-  
-  <!-- END CONTACT SECTION -->
-  
-  <!-- START FOOTER SECTION -->
-  
-  <footer>
-    
+
+  <section class="stats" aria-label="Highlights">
+    <div><strong>2+ yrs</strong><span>production .NET</span></div>
+    <div><strong>3</strong><span>banking domains</span></div>
+    <div><strong>~20</strong><span>reporting modules delivered</span></div>
+    <div><strong>3.44</strong><span>GPA, Computer Science</span></div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="section-head">
+      <h2>Experience</h2>
+      <p>Banking, enterprise reporting, and internal systems.</p>
+    </div>
+
+    <ol class="timeline">
+      <li>
+        <div class="when">Jan 2026 — Present</div>
+        <div class="role">
+          <h3>Backend Developer · PT Bank Rakyat Indonesia (Persero) Tbk</h3>
+          <p class="where">Jakarta</p>
+          <ul>
+            <li>Develop ASP.NET Core middleware connecting BRImo to core banking and third-party providers.</li>
+            <li>Delivered middleware for BRImo international transaction features, from API contract to SIT/UAT and deployment.</li>
+            <li>Hardened exception handling and structured logging to shorten production diagnosis.</li>
+            <li>Maintain SSIS data-integration packages and support Bamboo deployments.</li>
+          </ul>
+          <p class="tags">ASP.NET Core · C# · SQL Server · SSIS · RabbitMQ · Redis · Bitbucket · Bamboo</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Feb 2025 — Aug 2025</div>
+        <div class="role">
+          <h3>.NET Developer · PT Praisindo Teknologi</h3>
+          <p class="where">Jakarta</p>
+          <ul>
+            <li>Delivered ~20 reporting modules with SQL Server stored procedures and Report Builder.</li>
+            <li>Built ASP.NET Core 6 APIs integrated with SQL Server for banking clients.</li>
+            <li>Tuned reporting queries and closed UAT with no major defects.</li>
+          </ul>
+          <p class="tags">.NET 6 · ASP.NET Core Web API · SQL Server · Stored Procedures · Report Builder</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Apr 2024 — Nov 2024</div>
+        <div class="role">
+          <h3>.NET Developer · PT Astra Graphia Information Technology</h3>
+          <p class="where">Jakarta</p>
+          <ul>
+            <li>Built approval workflow, Manpower Planning, and Manpower Statistics modules in ASP.NET Web Forms.</li>
+            <li>Generated SQL Server reports and stabilized the application through production fixes.</li>
+          </ul>
+          <p class="tags">ASP.NET Web Forms · .NET Framework 4.6 · ADO.NET · Entity Framework · SQL Server</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Feb 2023 — Jul 2023</div>
+        <div class="role">
+          <h3>Backend Developer Intern · PT Suitmedia Kreasi Indonesia</h3>
+          <p class="where">Jakarta</p>
+          <ul>
+            <li>Built ASP.NET Core APIs for a microservices approval system with JWT auth and role-based authorization.</li>
+            <li>Implemented EF Core Code First migrations and CRUD APIs, and supported CMS features.</li>
+          </ul>
+          <p class="tags">ASP.NET Core 3.1 · EF Core · JWT · SQL Server · Microservices</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-head">
+      <h2>Projects</h2>
+      <p>Small, runnable services that mirror the production problems I work on. Each repo has tests and a README that explains the design.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <p class="card-kicker">Middleware</p>
+        <h3><a href="https://github.com/rayhanhakeem/banking-transfer-middleware">banking-transfer-middleware</a></h3>
+        <p>
+          ASP.NET Core transfer API between a mobile channel and core banking. JWT channel auth,
+          idempotent submission that survives duplicate requests, retry on a flaky core host, and
+          typed decline reasons.
+        </p>
+        <ul class="bullets">
+          <li>Concurrent duplicates call core exactly once</li>
+          <li>Same key + different payload → 409</li>
+          <li>10 integration tests</li>
+        </ul>
+        <p class="tags">.NET 8 · JWT · Idempotency · Resilience · xUnit</p>
+        <a class="card-link" href="https://github.com/rayhanhakeem/banking-transfer-middleware">View source →</a>
+      </article>
+
+      <article class="card">
+        <p class="card-kicker">Data / operations</p>
+        <h3><a href="https://github.com/rayhanhakeem/switch-reconciliation-tool">switch-reconciliation-tool</a></h3>
+        <p>
+          End-of-day reconciliation between a switch export and the core banking journal. Pairs
+          entries by reference, classifies every break, writes an operator report, and gates
+          settlement through the exit code.
+        </p>
+        <ul class="bullets">
+          <li>Amount, currency, duplicate, and missing-side breaks</li>
+          <li>Deterministic CSV output, culture-safe money</li>
+          <li>14 tests</li>
+        </ul>
+        <p class="tags">.NET 8 · CLI · CSV · Reconciliation</p>
+        <a class="card-link" href="https://github.com/rayhanhakeem/switch-reconciliation-tool">View source →</a>
+      </article>
+
+      <article class="card">
+        <p class="card-kicker">Workflow</p>
+        <h3><a href="https://github.com/rayhanhakeem/approval-workflow-api">approval-workflow-api</a></h3>
+        <p>
+          Approval API with an explicit state machine: role gates, self-approval block, optimistic
+          concurrency, mandatory rejection comments, and an append-only audit history.
+        </p>
+        <ul class="bullets">
+          <li>Double decision → 409, stale version → 409</li>
+          <li>Every transition recorded with actor and reason</li>
+          <li>12 tests</li>
+        </ul>
+        <p class="tags">.NET 8 · State machine · RBAC · Audit · xUnit</p>
+        <a class="card-link" href="https://github.com/rayhanhakeem/approval-workflow-api">View source →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-head">
+      <h2>Skills</h2>
+      <p>What I use day to day, and what I reach for next.</p>
+    </div>
+    <div class="skill-groups">
+      <div>
+        <h3>Languages</h3>
+        <p>C# · SQL · JavaScript · HTML · CSS</p>
+      </div>
+      <div>
+        <h3>Frameworks</h3>
+        <p>ASP.NET Core · ASP.NET MVC/Web API · Web Forms · .NET Framework · EF Core · ADO.NET</p>
+      </div>
+      <div>
+        <h3>Data</h3>
+        <p>SQL Server · stored procedures · views · functions · query tuning · SSIS</p>
+      </div>
+      <div>
+        <h3>Delivery</h3>
+        <p>Git/Bitbucket · Bamboo · Postman · Confluence · RabbitMQ · Redis · Report Builder</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section edu">
+    <div class="section-head">
+      <h2>Education</h2>
+    </div>
     <p>
-       Thanks to
-      <a href="https://www.freecodecamp.com/" target="_blank"
-        >freeCodeCamp <i class="fab fa-free-code-camp"></i
-      ></a> 
-      for the reference
+      <strong>Universitas Brawijaya</strong> — Bachelor of Computer Science, 2020–2024, GPA 3.44/4.00.
+      Full-stack elective track. Certified in Responsive Web Design (freeCodeCamp).
     </p>
-  </footer>
-  
-  <!-- END FOOTER SECTION -->
-  </body>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Let's talk</h2>
+    <p>Open to backend roles and integration work. The fastest way to reach me is email.</p>
+    <div class="cta">
+      <a class="button primary" href="mailto:hakimnubi404@gmail.com">hakimnubi404@gmail.com</a>
+      <a class="button" href="https://www.linkedin.com/in/rayhanhakeem">LinkedIn</a>
+      <a class="button" href="https://github.com/rayhanhakeem">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year">2026</span> Rayhan Hakeem · Built as static HTML, hosted on GitHub Pages.</p>
+</footer>
+</body>
 </html>
